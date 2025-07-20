@@ -4,7 +4,7 @@ body {
     padding: 0;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     box-sizing: border-box;
     scrollbar-width: thin;
 }
@@ -12,7 +12,7 @@ body {
 body {
     background-image: url('images/tile.jpg');
     display: grid;
-    grid-template-rows: auto 2fr 3fr;
+    grid-template-rows: auto min-content 1fr;
 }
 
 body * {
@@ -74,8 +74,9 @@ form label {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    height: calc(100vh * 0.45);
+    /* height: calc(100vh * 0.45); */
     overflow-y: auto;
+    padding-bottom: 20px;
 }
 
 form {
