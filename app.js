@@ -94,12 +94,4 @@ function deleteNote(id) {
   loadNotesFromStorage();
 }
 
-const deleteAllNote = () => {
-  const notesJSON = localStorage.getItem(NOTES_KEY_NAME);
-  let notes = JSON.parse(notesJSON);
-  notes = [];
-  localStorage.setItem(NOTES_KEY_NAME, JSON.stringify(notes));
-  loadNotesFromStorage();
-}
-
 loadNotesFromStorage();
